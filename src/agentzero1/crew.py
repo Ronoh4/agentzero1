@@ -2,7 +2,7 @@ from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
 
-# Set environmental variables
+# Set environmental var variables
 nvidia_api_key = os.environ.get["NVIDIA_API_KEY"]
 
 
