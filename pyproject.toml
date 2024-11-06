@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "agentzero1"
+version = "0.1.0"
+description = "AgentZero1 using crewAI"
+authors = ["Phil"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.70.1,<1.0.0" }
+
+
+[tool.poetry.scripts]
+agentzero1 = "agentzero1.main:run"
+run_crew = "agentzero1.main:run"
+train = "agentzero1.main:train"
+replay = "agentzero1.main:replay"
+test = "agentzero1.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
