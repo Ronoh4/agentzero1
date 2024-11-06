@@ -3,8 +3,7 @@ from crewai.project import CrewBase, agent, crew, task
 import os
 
 # Set environmental variables
-os.environ["NVIDIA_API_KEY"] = "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"
-nvidia_api_key = os.environ["NVIDIA_API_KEY"]
+nvidia_api_key = os.environ.get["NVIDIA_API_KEY"]
 
 
 # Initialize NVIDIA Client using LLM
