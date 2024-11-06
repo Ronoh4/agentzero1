@@ -1,0 +1,28 @@
+origin_research_task:
+  description: >
+    Research the origin and history of the clothing style in {question} and of {gender}
+  expected_output: >
+    A detailed but brief research on the origin and history of the given clothing style and of the given gender. 
+  agent: origin_agent
+
+trends_research_task:
+  description: >
+    Research the top 3 trends in 2024 for the style in {question} and of {gender}
+  expected_output: >
+    A detailed list of the top 3 trends for the given clothing style in 2024 and of the given gender.
+  agent: trends_agent
+
+report_task:
+  description: >
+    Create a summarized report on the origin and the top 3 trends in 2024 for the style in {question} and of {gender}
+  expected_output: >
+    A brief well-structured report with the necessary fields to capture every aspect of the style in detail.
+  agent: trends_agent
+
+quality_task:
+  description: >
+    Check the final report keenly to ensure it is not longer than 160 words and that it contains details on the origin and the top 3 trends in 2024 for the style in {question} and of {gender}
+  expected_output: >
+    A report of not longer that 160 words that capture the origin and top 3 trends in 2024 for the style specified. 
+  agent: quality_agent
+  
